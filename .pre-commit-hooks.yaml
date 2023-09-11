@@ -1,0 +1,6 @@
+- id: check-ansible-vulnerabilities
+  name: Check ansible playbooks for vulnerabilities
+  description: Check an ansible playbook for vulnerabilities using checkmarx/kics
+  entry: checkmarx/kics:latest
+  language: docker_image 
+  stages: [commit, push, manual]
